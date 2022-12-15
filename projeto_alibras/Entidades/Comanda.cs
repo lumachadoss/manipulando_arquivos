@@ -15,7 +15,7 @@ namespace projeto_alibras.Entidades
         [Required]
         public int Status { get; set; }
         [Required]
-        public DateTime AlteradoEm { get; set; }
+        public DateTime Inicio { get; set; }
         [Required]
         public DateTime FinalizadoEm { get; set; }
         [Required]

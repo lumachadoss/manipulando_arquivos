@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace projeto_alibras.Entidades
 {
-    public class Produto
-    {
+    internal class Caixa
+    {   
         public int Id { get; set; }
         [Required]
     }

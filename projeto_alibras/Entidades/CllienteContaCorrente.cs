@@ -7,21 +7,20 @@ using System.Threading.Tasks;
 
 namespace projeto_alibras.Entidades
 {
-     public class ItemComanda
-     {
+    public class CllienteContaCorrente
+    {
         public int Id { get; set; }
         [Required]
-        public int Quantidade { get; set; }
+        public string Descricao { get; set; }
         [Required]
-        public int Status { get; set; }
+        public DateTime MovimentoEm { get; set; }
         [Required]
-        public DateTime AlteradoEm { get; set; }
-        [Required]
-        public DateTime CriadoEm { get; set; }
+        public decimal Saldo { get; set; }
         [Required]
         public decimal Valor { get; set; }
         [Required]
-        public decimal ValorUnitario { get; set; }
+        public int ClienteId { get; set; }
         [Required]
-     }
+
+    }
 }
