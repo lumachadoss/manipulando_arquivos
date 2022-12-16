@@ -58,7 +58,7 @@
     <Compile Include="Entidades\Caixa.cs" />
     <Compile Include="Entidades\Cliente.cs" />
     <Compile Include="Entidades\ClienteCartaodeCredito.cs" />
-    <Compile Include="Entidades\CllienteContaCorrente.cs" />
+    <Compile Include="Entidades\ClienteContaCorrente.cs" />
     <Compile Include="Entidades\ItemComanda.cs" />
     <Compile Include="Entidades\Lancamento.cs" />
     <Compile Include="Entidades\Produto.cs" />

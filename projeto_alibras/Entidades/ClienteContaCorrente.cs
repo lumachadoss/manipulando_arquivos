@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace projeto_alibras.Entidades
 {
-    public class CllienteContaCorrente
+    public class ClienteContaCorrente
     {
         public int Id { get; set; }
         [Required]

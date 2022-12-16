@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace projeto_alibras.Entidades
 {
-    public class T_Comanda
+    public class Comanda
     {
         public int Id { get;  set; }
         [Required]
