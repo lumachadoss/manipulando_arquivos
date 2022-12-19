@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using projeto_alibras.Entidades;
 
 namespace projeto_alibras
 {
@@ -21,6 +22,29 @@ namespace projeto_alibras
                 DateTime diaCompra = Convert.ToDateTime(arr[2]);
                 Console.WriteLine($" Matrícula: {matricula}, valor: {valor}, dia da compra: {diaCompra}");
             }
+            var comanda = new Comanda
+            {
+                FinalizadoEm = diaCompra,
+                Inicio = diaCompra,
+                Status = 1,
+                ValorPago = valor,
+                ValorTotal = valor,
+                Itens = new List<ItemComanda>(),
+                //ClienteCartaoCredito
+            };
+
+            var itemComanda = new ItemComanda
+            {
+                AlteradoEm = diaCompra,
+                CriadoEm = diaCompra,
+                Quantidade = 1,
+                Status = 1,
+                Valor = valor,
+                ValorUnitario = valor,
+                //ProdutoId = 1
+            };
+
+            comanda.Itens.Add(itemComanda);
             Console.ReadKey();
 
         }
